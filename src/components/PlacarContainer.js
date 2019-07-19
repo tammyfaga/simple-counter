@@ -13,15 +13,15 @@ export default class PlacarContainer extends React.Component {
   }
 
   marcarGolCasa() {
-    this.setState({
-      gols_casa: this.state.gols_casa + 1,
-    });
+    this.setState(prevState => ({
+      gols_casa: prevState.gols_casa + 1,
+    }));
   }
 
   marcarGolVisitiante() {
-    this.setState({
-      gols_visitante: this.state.gols_visitante + 1,
-    });
+    this.setState(prevState => ({
+      gols_visitante: prevState.gols_visitante + 1,
+    }));
   }
 
   render() {

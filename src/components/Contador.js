@@ -9,15 +9,15 @@ export default class Contador extends React.Component {
   }
 
   decrementar() {
-    this.setState({
-      contador: this.state.contador - 1,
-    });
+    this.setState(prevState => ({
+      contador: prevState.contador - 1,
+    }));
   }
 
   incrementar() {
-    this.setState({
-      contador: this.state.contador +1,
-    });
+    this.setState(prevState => ({
+      contador: prevState.contador +1,
+    }));
   }
 
   render() {
